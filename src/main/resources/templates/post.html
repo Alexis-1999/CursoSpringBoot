@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/bootstrap.css}"  rel="stylesheet" href="../static/css/bootstrap.css">
+    <script th:href="@{/js/jquery.js.js}" src="../static/js/jquery.js.js"></script>
+    <script th:href="@{/js/bootstrap.js}" src="../static/js/bootstrap.js"></script>
+
+    <title>Post</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Spring Boot</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" th:href="@{/}" href="#">Inicio</a>
+              <a class="nav-link" href="#">Galeria</a>
+              <a class="nav-link" href="#">Post</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="jumbotron">
+        <h1 th:text="${post.titulo}">Hello, world!</h1>
+        <p th:text="${post.descripcion}">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto aut praesentium veniam ut dolorem beatae ducimus neque incidunt illo quia, voluptas, quaerat sed excepturi. Est recusandae aperiam ipsum modi ut!</p>
+        <hr class="my-4">
+        <p th:text="${post.fecha}">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quod eaque numquam. Quas, enim voluptate, veniam optio officia blanditiis tenetur quae inventore iure velit eligendi. Dolorem amet placeat sit a.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+
+
+    <footer>
+        <p>By Alexis Aguilar</p>
+      </footer>
+</body>
+</html>
